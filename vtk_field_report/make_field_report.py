@@ -50,12 +50,9 @@ def read_set(path):
                 for r in csv.DictReader(f)]
 
 
-def num(x):
-    return f"{x:g}"
-
-
 def render_name(s, r):
-    return f"set{s}_point{r['point']:02d}_wv{num(r['wv'])}nm_amp{num(r['amp'])}pct.png"
+    # same pattern as Aum's .vtk names: point01_wv400nm_amp0.56pct (wavelength integer, amp 2 decimals)
+    return f"set{s}_point{r['point']:02d}_wv{r['wv']:.0f}nm_amp{r['amp']:.2f}pct.png"
 
 
 def profile(r):

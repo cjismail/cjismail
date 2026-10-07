@@ -27,7 +27,7 @@ mean absolute error 1.37 / 255 over the 20 points (worst 2.78, set 2 point 1 wit
 stripes). Remaining differences are edge anti-aliasing and a slightly different top-face tint.
 
 ## Outputs
-- `renders/` one PNG per point, named like Aum's `.vtk` files
+- `renders/` one PNG per point, named like Aum's `.vtk` files (`point<NN>_wv<λ>nm_amp<amp>pct`, with a `set<N>_` prefix)
 - `VTK_Field_Report_regenerated.xlsx` same layout as the original report
 - `Aums_CM_sweep_2D_with_renders.xlsx` (only with `--sweep`) Aum's sweep table with the
   `CM render` column filled; not committed because it contains his SIM results
